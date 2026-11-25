@@ -1,115 +1,364 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore software solutions, AI tools, mobile apps and custom software by TAVORYXEN TECHNOLOGIES.">
 <title>Our Software | TAVORYXEN TECHNOLOGIES</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#07111f;color:#f4f7ff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-header{background:#0b1829;border-bottom:1px solid #26364b;padding:18px 5%;display:flex;justify-content:space-between;align-items:center}
-.logo{color:#28c5e5;font-size:19px;font-weight:bold}
-.home{color:#28c5e5}
-.container{width:92%;max-width:1100px;margin:auto}
-.hero{text-align:center;padding:75px 15px;background:radial-gradient(circle at top,rgba(36,123,255,.25),transparent 60%)}
-.hero h1{font-size:clamp(30px,6vw,48px);margin-bottom:15px}
-.hero h1 span{color:#28c5e5}
-.hero p{color:#a9b8cc;max-width:650px;margin:auto}
-section{padding:55px 0}
-.title{text-align:center;margin-bottom:35px}
-.title h2{font-size:29px;margin-bottom:8px}
-.title p{color:#a9b8cc}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#101f33;border:1px solid #26364b;border-radius:12px;padding:25px}
-.icon{font-size:32px;margin-bottom:12px}
-.card h3{margin-bottom:10px}
-.card p{color:#a9b8cc;font-size:14px}
-.status{display:inline-block;margin-top:15px;padding:5px 10px;border-radius:20px;background:#25364c;color:#a9b8cc;font-size:12px}
-.button{display:inline-block;margin-top:18px;padding:11px 17px;background:#247bff;border-radius:7px;color:white;font-weight:bold;font-size:14px}
-.button:hover{background:#1264df}
-.info{background:#0b1829;text-align:center}
-.info p{color:#a9b8cc;max-width:700px;margin:10px auto}
-footer{text-align:center;padding:25px;color:#a9b8cc;border-top:1px solid #26364b;font-size:13px}
-@media(max-width:750px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}header{gap:10px;flex-wrap:wrap}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#07111f;
+  color:#f4f7ff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+header{
+  background:#0b1829;
+  border-bottom:1px solid #26364b;
+  padding:18px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  color:#28c5e5;
+  font-size:19px;
+  font-weight:bold;
+}
+
+.home{
+  color:#28c5e5;
+}
+
+.container{
+  width:92%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.hero{
+  text-align:center;
+  padding:75px 15px;
+  background:radial-gradient(circle at top,rgba(36,123,255,.25),transparent 60%);
+}
+
+.hero h1{
+  font-size:clamp(30px,6vw,48px);
+  margin-bottom:15px;
+}
+
+.hero h1 span{
+  color:#28c5e5;
+}
+
+.hero p{
+  color:#a9b8cc;
+  max-width:650px;
+  margin:auto;
+}
+
+section{
+  padding:55px 0;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.title h2{
+  font-size:29px;
+  margin-bottom:8px;
+}
+
+.title p{
+  color:#a9b8cc;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:linear-gradient(145deg,#12243a,#0d1a2b);
+  border:1px solid #26364b;
+  border-radius:14px;
+  padding:25px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#28c5e5;
+  box-shadow:0 8px 25px rgba(40,197,229,.12);
+}
+
+.icon{
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-size:19px;
+}
+
+.card p{
+  color:#a9b8cc;
+  font-size:14px;
+}
+
+.features{
+  margin:17px 0 5px;
+  padding-left:20px;
+  color:#d5e1f1;
+  font-size:13px;
+}
+
+.features li{
+  margin:6px 0;
+}
+
+.status{
+  display:inline-block;
+  margin-top:15px;
+  padding:5px 11px;
+  border-radius:20px;
+  background:#25364c;
+  color:#a9b8cc;
+  font-size:12px;
+}
+
+.button{
+  display:inline-block;
+  margin-top:18px;
+  padding:11px 17px;
+  background:#247bff;
+  border-radius:7px;
+  color:white;
+  font-weight:bold;
+  font-size:14px;
+  transition:background .2s;
+}
+
+.button:hover{
+  background:#1264df;
+}
+
+.info{
+  background:#0b1829;
+  text-align:center;
+}
+
+.info p{
+  color:#a9b8cc;
+  max-width:700px;
+  margin:10px auto;
+}
+
+.info .button{
+  background:#087fbd;
+}
+
+.info .button:hover{
+  background:#05679b;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#a9b8cc;
+  border-top:1px solid #26364b;
+  font-size:13px;
+}
+
+.footer-name{
+  margin-top:15px;
+  font-size:16px;
+  letter-spacing:1.5px;
+}
+
+.footer-name span{
+  font-weight:bold;
+  font-size:20px;
+  background:linear-gradient(90deg,#28c5e5,#a855f7);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+footer .home{
+  display:inline-block;
+  margin-top:12px;
+}
+
+@media(max-width:750px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:520px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  header{
+    flex-wrap:wrap;
+  }
+
+  .hero{
+    padding:55px 12px;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<a class="logo" href="index.html">TAVORYXEN TECHNOLOGIES</a>
-<a class="home" href="index.html">← Back to Home</a>
+  <a class="logo" href="index.html">TAVORYXEN TECHNOLOGIES</a>
+  <a class="home" href="index.html">← Back to Home</a>
 </header>
 
 <div class="hero">
-<div class="container">
-<h1>Our <span>Software Products</span></h1>
-<p>Explore our software ideas and upcoming digital solutions. We aim to build practical tools based on real customer needs.</p>
-</div>
+  <div class="container">
+    <h1>Our <span>Software Products</span></h1>
+    <p>
+      Explore our software ideas, digital solutions and upcoming products.
+      We aim to build practical tools based on real customer needs.
+    </p>
+  </div>
 </div>
 
 <section>
 <div class="container">
+
 <div class="title">
-<h2>Explore Software Categories</h2>
-<p>Our product collection will grow as we develop new solutions.</p>
+  <h2>Explore Software Categories</h2>
+  <p>Explore our planned products and tell us what you need.</p>
 </div>
 
 <div class="grid">
 
 <div class="card">
-<div class="icon">🏢</div>
-<h3>Business Management Software</h3>
-<p>Tools for shop owners and businesses to manage stock, sales, expenses, customers and daily operations.</p>
-<span class="status">Planned Product</span>
-<br>
-<a class="button" href="index.html#request">Request Details</a>
+  <div class="icon">🏢</div>
+  <h3>Business Management Software</h3>
+  <p>Tools for shop owners and businesses to manage daily operations.</p>
+
+  <ul class="features">
+    <li>Stock and Inventory Management</li>
+    <li>Sales and Expense Records</li>
+    <li>Customer Management</li>
+    <li>Business Reports</li>
+  </ul>
+
+  <span class="status">Planned Product</span>
+  <br>
+  <a class="button" href="index.html#request">Request This Software</a>
 </div>
 
 <div class="card">
-<div class="icon">🎓</div>
-<h3>Education Management Software</h3>
-<p>Ideas for managing students, teachers, attendance, fees, classes and learning activities.</p>
-<span class="status">Planned Product</span>
-<br>
-<a class="button" href="index.html#request">Request Details</a>
+  <div class="icon">🎓</div>
+  <h3>Education Management Software</h3>
+  <p>Management solutions for schools, coaching centres and institutes.</p>
+
+  <ul class="features">
+    <li>Student Records</li>
+    <li>Attendance Management</li>
+    <li>Fees Management</li>
+    <li>Class and Teacher Records</li>
+  </ul>
+
+  <span class="status">Planned Product</span>
+  <br>
+  <a class="button" href="index.html#request">Request This Software</a>
 </div>
 
 <div class="card">
-<div class="icon">🤖</div>
-<h3>AI Tools</h3>
-<p>AI-powered tools for content creation, productivity, automation and creative work.</p>
-<span class="status">Planned Product</span>
-<br>
-<a class="button" href="index.html#request">Request Details</a>
+  <div class="icon">🤖</div>
+  <h3>AI Tools</h3>
+  <p>AI-powered ideas for productivity, content creation and creative work.</p>
+
+  <ul class="features">
+    <li>AI Content Generation</li>
+    <li>Creative Tools</li>
+    <li>Productivity Assistance</li>
+    <li>Workflow Automation Ideas</li>
+  </ul>
+
+  <span class="status">Planned Product</span>
+  <br>
+  <a class="button" href="index.html#request">Request AI Tools</a>
 </div>
 
 <div class="card">
-<div class="icon">📱</div>
-<h3>Mobile Applications</h3>
-<p>Android applications designed to make everyday tasks easier and more efficient.</p>
-<span class="status">Planned Product</span>
-<br>
-<a class="button" href="index.html#request">Suggest an App</a>
+  <div class="icon">📱</div>
+  <h3>Mobile Applications</h3>
+  <p>Android applications designed to make everyday tasks easier.</p>
+
+  <ul class="features">
+    <li>Business Applications</li>
+    <li>Personal Utility Apps</li>
+    <li>Education Applications</li>
+    <li>Custom Android Apps</li>
+  </ul>
+
+  <span class="status">Planned Product</span>
+  <br>
+  <a class="button" href="index.html#request">Suggest an App</a>
 </div>
 
 <div class="card">
-<div class="icon">🌐</div>
-<h3>Web Applications</h3>
-<p>Online tools and platforms for personal, educational and business requirements.</p>
-<span class="status">Planned Product</span>
-<br>
-<a class="button" href="index.html#request">Request a Website</a>
+  <div class="icon">🌐</div>
+  <h3>Web Applications</h3>
+  <p>Online tools and platforms for personal, educational and business needs.</p>
+
+  <ul class="features">
+    <li>Business Web Applications</li>
+    <li>Online Management Systems</li>
+    <li>Customer Portals</li>
+    <li>Custom Web Solutions</li>
+  </ul>
+
+  <span class="status">Planned Product</span>
+  <br>
+  <a class="button" href="index.html#request">Request a Website</a>
 </div>
 
 <div class="card">
-<div class="icon">💡</div>
-<h3>Custom Software</h3>
-<p>Have a unique requirement? Tell us what you need and we can review your software idea.</p>
-<span class="status">By Request</span>
-<br>
-<a class="button" href="index.html#request">Submit Your Idea</a>
+  <div class="icon">💡</div>
+  <h3>Custom Software</h3>
+  <p>Have a unique requirement? Tell us your idea and we can review it.</p>
+
+  <ul class="features">
+    <li>Custom Business Solutions</li>
+    <li>Special-purpose Software</li>
+    <li>Custom Features</li>
+    <li>Requirement-based Development</li>
+  </ul>
+
+  <span class="status">By Request</span>
+  <br>
+  <a class="button" href="index.html#request">Submit Your Idea</a>
 </div>
 
 </div>
@@ -118,22 +367,37 @@ footer{text-align:center;padding:25px;color:#a9b8cc;border-top:1px solid #26364b
 
 <section class="info">
 <div class="container">
-<div class="title">
-<h2>Want to Try a Demo?</h2>
-</div>
-<p>Product demos will be added when individual software products are ready. You can submit your requirements or suggest a new product through our request form.</p>
-<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfvEwm4hJVSFoiyK7nMdNA9BnOkR47LtBGhkK3EZXwBqbClXg/viewform" target="_blank" rel="noopener">Submit Software Request</a>
+  <div class="title">
+    <h2>Want to Try a Demo?</h2>
+  </div>
+
+  <p>
+    Product demos will be added when individual software products are ready.
+    You can submit your requirements or suggest a new product through our request form.
+  </p>
+
+  <a class="button"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSfvEwm4hJVSFoiyK7nMdNA9BnOkR47LtBGhkK3EZXwBqbClXg/viewform"
+     target="_blank"
+     rel="noopener">
+     Submit Software Request
+  </a>
 </div>
 </section>
 
 <footer>
-<p>© <span id="year"></span> TAVORYXEN TECHNOLOGIES. All Rights Reserved.</p>
-<a class="home" href="index.html">Back to Home</a>
+  <p>© <span id="year"></span> TAVORYXEN TECHNOLOGIES. All Rights Reserved.</p>
+
+  <p class="footer-name">
+    Created by <span>Fz_Sahil</span>
+  </p>
+
+  <a class="home" href="index.html">Back to Home</a>
 </footer>
 
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 </script>
+
 </body>
 </html>
-  
